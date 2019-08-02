@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ANTISOMA</title>
+<meta name="author" content="knastou">
+<link rel="shortcut icon" href="style/favicon.png" />
+<link rel="stylesheet" type="text/css" href="./style/style_index.css">
+</head>
+
+<body bgcolor="#0d47a1">
+	
+	
+	<table class="header">
+  	<tr>
+    	<td rowspan="2"><img src="./style/logo_soma.jpg" height="120" align="center"></td>
+    	<th><h1>Reduction of the Aggregation Propensity of Monoclonal Antibodies</h1></th>
+  	</tr>
+  	<tr>
+    	<td>
+			<table class="nav" width="100%" >
+			<tbody>
+			<tr class="nav_cell">
+					<td class="nav_cell" width="25%" align="center">
+   					<a class="navbar" href="index.html">Home</a></td>
+   
+					<td class="nav_cell" width="25%" align="center">
+        			<a class="navbar" href="submit.php">Submission</a></td>
+
+					<td class="nav_cell" width="25%" align="center">
+					<a class="navbar" href="manual.html">Manual</a></td>
+		
+					<td class="nav_cell" width="25%" align="center">
+       				<a class="navbar" href="contact.html">Contact</a></td>
+       
+			</tr>
+			</tbody>
+			</table>
+	  </td>
+  	</tr>
+	</table>
+	<br>
+	<!-- BEGGINING OF DESCRIPTION-->
+	<div class="Description">
+					<div id="main_theme">
+                    <p align="justify">			    
+				    <strong>Monoclonal antibodies (mAbs)</strong> are a promising class of therapeutics, since ca. 25% 
+					of all biotech drugs in development are mAbs.  Even though their therapeutic value is now well established, 
+					human and murine derived mAbs do have deficiencies, such as short in vivo lifespan and low stability.  
+					However, the most difficult obstacle to overcome, towards the exploitation of mAbs for disease treatment, 
+					is the prevention of the formation of protein aggregates.  
+				    </p>
+					
+					 <p align="justify">			    
+				     <strong>ANTISOMA</strong> is a pipeline for the reduction of the aggregation tendency of mAbs through 
+					 the decrease in their intrinsic aggregation propensity, based on an automated amino acid substitution approach.  
+					The computational models of mAbs produced by this method could prove important for the experimental 
+					improvement of their aggregation propensity, and thus the wider usage of this promising therapeutic approach.
+					</p>
+					<u>Method Description</u><br>
+					<p align="justify">
+					<strong>DSSP</strong> detects the amino acid residues that are accessible to the solvent.  Residues that belong to CDRs or those 
+					that are involved in epitope recognition are also identified.  Then, substitutions are applied on critical sites that are located on <strong>"aggregation-prone" regions (APRs)</strong> 
+					based on the prediction by the algorithm <strong>AMYLPRED2</strong>.  The default substitution matrix utilized in the online implementation of ANTISOMA is based on 
+					the experimental aggregation propensities of the standard amino acids, described by <em>Sanchez de Groot et al.</em>.  Researchers can cautiously 
+					proceed to change the substitution matrix if they wish.  As an extra step to ensure that the applied mutations will not lead to reduction of protein stability, 
+					the <strong>FoldX</strong> algorithm is integrated in ANTISOMA.  FoldX is used to determine whether an applied point mutation increases or decreases the stability of the 
+					molecule, taking into consideration solution conditions.  All destabilizing mutations are rejected from any further analysis.  With the completion of this step <strong>all critical mutations</strong> that will be applied 
+					to a mAb have been detected by our method.  Finally, the <strong>Modeller</strong> software is utilized to construct the three-dimensional model structure of the antibody 
+					after mutations have been applied.
+					</p>
+					<p align="justify">			    
+				    <strong>INPUT<br>ANTISOMA</strong> needs  either the <strong>PDB ID</strong> or a <strong>.pdb</strong> file as <u>input</u>.
+					</p>
+					
+					<p align="justify">	
+						<strong>OUTPUT</strong><br>The <u>primary output</u> contains:<br>
+						<ul text align="left">
+							<li><strong>Complementarity Determing Regions (CDRs) of light and heavy chain</strong></li>
+							<li>A table of <strong>rationally designed substitutions</strong>, customized for each input file
+							</li>
+							<li>A <strong>sequence alignment</strong> highlighting residues before and after substitutions</li>
+							<li><strong>"Aggregation-prone" regions (APRs)</strong> predicted by our consensus method AMYLPRED2 <i>(Tsolis, et al. (2013), PLOS ONE 8(1):e54175)</i> before and after substitutions</li>
+						</ul> 
+				    </p>
+				    
+				    <p align="justify">	
+						<u>Advanced output</u> files  are also available for download:<br>
+						<ul text align="left">
+							<li>A <strong>text file</strong> (.txt) containing all primary output results</li>
+							<li><strong>Fasta sequence files</strong> (.txt) of the mAbs before and after substitutions</li>
+							<li>A <strong>new model</strong> created by <strong>Modeller</strong> <i>(Webb & Sali (2014), Current Protocols in 
+							Bioinformatics, John Wiley & Sons, 5.6:1-32)</i>.
+							</li>
+						</ul> 
+				    </p>
+		</div>
+	</div>
+	<!-- END OF DESCRIPTION-->
+	<br>
+	
+	<!-- BEGGINING OF FOOTER-->
+	<div class="Footer">
+		<img src="./style/athina.jpg" height="70" align="left">
+			<div class="Linkers">
+  				<tr>
+    				<td class="small_cell">
+    		    		<a target="_blank" class="navbar_foot" href ="http://www.uoa.gr/"><span style="color:#2F4F4F">National and Kapodistrian University of Athens</span></a>
+    				</td>
+				</tr><br> 
+				<tr>
+     				<td class="small_cell">
+     		    		<a target="_blank" class="navbar_foot" href ="http://www.biol.uoa.gr/"><span style="color:#2F4F4F">Department of Biology</span></a>
+     				</td>
+				</tr>
+					<br>
+            	<tr>
+     				<td class="small_cell"><a target="_blank" class="navbar_foot" href ="http://biophysics.biol.uoa.gr/">
+     		    		<span style="color:#008080">Back to Lab Page</span></a>
+     				</td>
+     	    	</tr>	
+		</div>
+   </div>
+   <!-- END OF FOOTER-->
+	
+	</body>
+
+</html>

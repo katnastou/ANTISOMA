@@ -1,0 +1,140 @@
+Amino acids for replacement
+
+LIGHT CHAIN		6:Q  10:I  23:C  73:L  115:V  139:F  
+HEAVY CHAIN		199:Q  
+*These amino acids are not on CDRs, they are accessible to the solvent and they are present in
+"aggregation-prone" regions
+
+--------------------------------------Sequences alignement---------------------------
+
+LIGHT CHAIN
+                    10         20         30         40         50         60 
+seq_before  DILLTQSPAI LSVSPGERVS FSCRASQFVG SSIHWYQQRT NGSPRLLIKY ASESMSGIPS 
+seq_after   DILLTqSPAa LSVSPGERVS FScRASQFVG SSIHWYQQRT NGSPRLLIKY ASESMSGIPS 
+
+                    70         80         90        100        110        120 
+seq_before  RFSGSGSGTD FTLSINTVES EDIADYYCQQ SHSWPFTFGS GTNLEVKRTV AAPSVFIFPP 
+seq_after   RFSGSGSGTD FTnSINTVES EDIADYYCQQ SHSWPFTFGS GTNLEVKRTV AAPSnFIFPP 
+
+                   130        140        150        160        170        180 
+seq_before  SDEQLKSGTA SVVCLLNNFY PREAKVQWKV DNALQSGNSQ ESVTEQDSKD STYSLSSTLT 
+seq_after   SDEQLKSGTA SVVCLLNNnY PREAKVQWKV DNALQSGNSQ ESVTEQDSKD STYSLSSTLT 
+
+                   190        200        210 
+seq_before  LSKADYEKHK VYACEVTHQG LSSPVTKSFN RGEC   
+seq_after   LSKADYEKHK VYACEVTHQG LSSPVTKSFN RGEC   
+
+
+
+HEAVY CHAIN
+                    10         20         30         40         50         60 
+seq_before  EVKLEESGGG LVQPGGSMKL SCVASGFIFS NHWMNWVRQS PEKGLEWVAE IRSKSINSAT 
+seq_after   EVKLEESGGG LVQPGGSMKL SCVASGFIFS NHWMNWVRQS PEKGLEWVAE IRSKSINSAT 
+
+                    70         80         90        100        110        120 
+seq_before  HYAESVKGRF TISRDDSKSA VYLQMTDLRT EDTGVYYCSR NYYGSTYDYW GQGTTLTVSS 
+seq_after   HYAESVKGRF TISRDDSKSA VYLQMTDLRT EDTGVYYCSR NYYGSTYDYW GQGTTLTVSS 
+
+                   130        140        150        160        170        180 
+seq_before  ASTKGPSVFP LAPSSKSTSG GTAALGCLVK DYFPEPVTVS WNSGALTSGV HTFPAVLQSS 
+seq_after   ASTKGPSVFP LAPSSKSTSG GTAALGCLVK DYFPEPVTVS WNSGALTSGV HTFPAVLQSS 
+
+                   190        200        210        220 
+seq_before  GLYSLSSVVT VPSSSLGTQT YICNVNHKPS NTKVDKKVEP KSCDKT  
+seq_after   GLYSLSSVVT VPSSSLGTqT YICNVNHKPS NTKVDKKVEP KSCDKT  
+
+
+
+--------------------------------------------------CDRS------------------------------------------
+
+L1		25-35			ASQFVGSSIHW
+L2		51-57			ASESMSG
+L3		90-98			QSHSWPFTF
+
+H1		32-46			HWMNWVRQSPEKGLE
+H2		61-66			HYAESV
+H3		101-103			NYY
+
+
+
+-------------------------------------Amylpred 2 results --------------------------------------
+
+Light chain before substitutions
+Region:					Start-End				Amino acids
+1					2-6					ILLTQ
+
+2					9-13					AILSV
+
+3					22-23					SC
+
+4					25-26					AS
+
+5					31-33					SSI
+
+6					35-36					WY
+
+7					46-50					LLIKY
+
+8					71-76					FTLSIN
+
+9					114-118					SVFIF
+
+10					129-139					TASVVCLLNNF
+
+
+
+Light chain after substitutions
+Region:					Start-End				Amino acids
+1					2-6					ILLTQ
+
+2					22-23					SC
+
+3					25-26					AS
+
+4					31-33					SSI
+
+5					35-36					WY
+
+6					46-50					LLIKY
+
+7					130-137					ASVVCLLN
+
+                                           -----------------                      
+
+Heavy chain before substitutions
+Region:					Start-End				Amino acids
+1					23-32					VASGFIFSNH
+
+2					81-86					VYLQMT
+
+3					93-100					TGVYYCSR
+
+4					115-118					TLTV
+
+5					148-150					LVK
+
+6					185-191					LSSVVTV
+
+7					197-205					GTQTYICNV
+
+
+
+Heavy chain after substitutions
+Region:					Start-End				Amino acids
+1					23-32					VASGFIFSNH
+
+2					81-86					VYLQMT
+
+3					93-100					TGVYYCSR
+
+4					115-118					TLTV
+
+5					148-150					LVK
+
+6					185-191					LSSVVTV
+
+7					197-205					GTQTYICNV
+
+
+
+------------------------------------------ END -----------------------------------------------------------

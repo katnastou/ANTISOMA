@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ANTISOMA</title>
+<meta name="author" content="knastou">
+<link rel="shortcut icon" href="style/favicon.png" />
+<link rel="stylesheet" type="text/css" href="./style/style_me.css">
+</head>
+
+<body bgcolor="#2C3539">
+	
+	
+	<table class="header">
+  	<tr>
+    	<td rowspan="2"><img src="./style/logo_soma.jpg" height="120" align="center"></td>
+    	<th><h1>Aggregation Propensity Optimization of Monoclonal Antibodies</h1></th>
+  	</tr>
+  	<tr>
+    	<td>
+			<table class="nav" width="100%" >
+			<tbody>
+			<tr class="nav_cell">
+					<td class="nav_cell" width="25%" align="center">
+   					<a class="navbar" href="index.html">Home</a></td>
+   
+					<td class="nav_cell" width="25%" align="center">
+        			<a class="navbar" href="submit.php">Submission</a></td>
+
+					<td class="nav_cell" width="25%" align="center">
+					<a class="navbar" href="manual.html">Manual</a></td>
+		
+					<td class="nav_cell" width="25%" align="center">
+       				<a class="navbar" href="contact.html">Contact</a></td>
+       
+			</tr>
+			</tbody>
+			</table>
+	  </td>
+  	</tr>
+	</table>
+	<br>
+	<!-- BEGGINING OF DESCRIPTION-->
+	<div class="Description">
+			<b><h3>Usage</h3> </b><hr>
+                    <p align="justify">			    
+				    ANTISOMA is freely available through http://bioinformatics.biol.uoa.gr/ANTISOMA
+				    </p><br>
+			<b><h3>Submission</h3> </b><hr>
+   					<p align="justify">		    
+					You can submit your query either by entering the PDB ID (1) or uploading your own file (2). Using the advanced options (3) you can apply changes to the substitutions table<br><br></p>
+					<img border="0"  src="style/submit0.jpg" align="middle" class="manual_img"/></td>
+					<p align="justify">
+					<strong>1</strong>: The submission with a PDB ID is completed in 4 steps.<br><br>
+					<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Step 1:</strong>
+					You must insert <u>a valid PDB ID</u><br>
+					<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Step 2:</strong>
+					Name of the light chain as defined in the pdb file<br>
+					<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Step 3:</strong>
+					Name of the heavy chain as defined in the pdb file <br>
+					<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Step 4:</strong>
+					Press the "Submit" button</p><br>
+					<img border="0"  src="style/submit1.jpg" align="middle" class="manual_img"/></td>
+					<br>
+					<p align="justify">
+					<strong>2</strong>: The submission with an upload of a PDB file is completed in 4 steps.<br><br>
+					<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Step 1:</strong>
+					You must upload <u>a valid pdb file</u>. The file must be in the pdb format and must contain the light and the heavy chain in the same pdb file <br>
+					<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Step 2:</strong>
+					Name of the light chain as defined in the pdb file<br>
+					<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Step 3:</strong>
+					Name of the heavy chain as defined in the pdb file<br>
+					<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Step 4:</strong>
+					Press the "Submit" button<br>
+					</p>
+					<p>
+					<img border="0" src="style/submit2.jpg" align="middle" class="manual_img"/></td>
+					</p>
+					<br>
+					<p align="justify">	
+					<strong>3</strong>: Advanced Options.<br><br>
+					<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Step 1:</strong>
+					You can apply changes to the default substitutions table.<br>
+					<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Step 2:</strong>
+					Press the save button in order to <u>save</u> your changes<br>
+					<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Step 3:</strong>
+					Proceed with the submission ONLY AFTER you have SAVED your changes. Otherwise the changes will be lost and the process will continue with the default substitution table.<br>
+					</p>
+					<p>
+					<img border="0" src="style/submit3.jpg" align="middle" class="manual_img"/></td>
+					</p>
+					<br><br>
+					
+			<b><h3>Results</h3> </b><hr>
+                    <p align="justify">	
+					<strong>&nbsp;Section 1:</strong><br></p>
+				    <img align='left' border="0" src="style/id.jpg" /> 
+					<p align="justify">	In the first section of the results you can retrieve your personal ID, with which you can have access to your results.
+					<u>Please note</u> that the text output file is maintained in the server for two weeks and can be accessed through the provided link (using your unique id for each submission, e.g. 1466681081). All submissions and results are kept confidential and deleted after one week.
+					<br>
+					Below is an example of the provided link for the final results file:
+					<a href ="http://thalis.biol.uoa.gr/ANTISOMA/TMP_FILES/1476890748final_results.txt" target="_blank">http://bioinformatics.biol.uoa.gr/ANTISOMA/results/<font color="blue">1476890748</font>final_results.txt</a>
+					</p>
+					<br><br>
+					
+					<p align="justify">	
+					<strong>&nbsp;Section 2:</strong><br></p>
+					<img align="middle" border="0" src="style/cdrs.jpg" class="manual_img"/><br>
+					<p align="justify">	
+					In this section the <u>CDRs</u> (Complementarity Determining Regions) are being predicted, based on <strong>Kabat's numbering scheme</strong> which is  is a widely adopted standard for numbering the residues in an antibody in a consistent manner.<br><br>
+					&nbsp;&nbsp;TABLE CONTENTS:
+					<p align="justify">
+					<ul align="left">
+						&nbsp;&nbsp;&nbsp;&nbsp;<li><strong>Light chain(or Heavy chain):</strong>The CDRs of light and heavy chain are named L1,L2 & L3 (light chain) and H1,H2 & H3 (heavy chain). </li>
+						&nbsp;&nbsp;&nbsp;&nbsp;<li><strong>Start-End:</strong>The user can see the starting and the ending cdr positions of the CDRs in the polypeptide chains</li>
+						&nbsp;&nbsp;&nbsp;&nbsp;<li><strong>Residues:</strong>	The user can also see the parts of the sequence that the CDRs contain</li>
+					</ul>
+					</p><br>
+					
+					<p align="justify">	
+					<strong>&nbsp;Section 3:</strong><br></p>
+					<img align="middle" border="0" src="style/Replacements.jpg" class="manual_img"/><br>
+				    <p align="justify">	In this section the residues that have been chosen for replacement are listed for both the light and the heavy chain. <strong>For example</strong>: "9:A" means that the 9th Alanine of the chain will be subjected to substitution<br>
+					</p>
+					<br><br>
+					
+					<p align="justify">	
+					<strong>&nbsp;Section 4:</strong><br></p>
+					<img align="middle" border="0" src="style/Sequences.jpg" class="manual_img"/><br>
+					<p align="justify">	
+					The sequence alignment of the light and the heavy chains of the monoclonal antibody before and after substitutions are presented in this section <strong>(in lower case letters are the residues that have been substituted)</strong>.
+					</p>
+					<br><br>
+					
+					
+					<p align="justify">	
+					<strong>&nbsp;Section 5:</strong><br></p>
+					<img align="middle" margin-left border="0" src="style/amylpred_results.jpg" class="manual_img"/><br>
+					<p align="justify">	
+					The <STRONG>'aggregation-prone' regions</strong> for the <strong>light</strong> and the <strong>heavy chain</strong> are given. The user can see the position of the 'aggregation-prone' regions and the residues before and after substitutions.
+					</p><br>
+					<img align="middle" border="0" src="style/clicks.jpg" class="manual_img"/><br>
+					<br>
+					
+			<b><h3>Fasta file before and after substiutions</h3> </b><hr>
+					With this option you are able to download the fasta files for your monoclonal antibody  in a text file.
+					
+			<b><h3>Calculate a new model with modeller</h3> </b><hr>
+					With this option the software Modeller (Program for Comparative Protein Structure Modelling by Satisfaction of Spatial Restraints) is used for homology and 
+					comparative modelling of protein three-dimensional structures, using the new sequences. Additionally the monoclonal antibody and the new model are visualised 
+					in order to compare the aggregation prone regions before and after substitutions.
+					<img align='middle' border="0" src="style/jmol_sections.jpg" class="manual_img"/><br>
+					<p align="justify">
+					<strong>Section 1:</strong><br>
+					The left model in this section corresponds to the monoclonal antibody before the substitutions, whereas the right shows the new model created with Modeller. <u>The color code is described below:</u><br>
+					<ul align=left>
+						<li>&nbsp;&nbsp;<span style=color:blue>Blue:</span>Heavy chain of the monoclonal antibody. </li>
+						<li>&nbsp;&nbsp;<span style=color:gray>Gray:</span>Light chain of the monoclonal antibody.</li>
+						<li>&nbsp;&nbsp;<span style=color:red>Red:</span>Aggregation prone regions (APRs) (predicted by Amylpred 2)</li>
+						<li>&nbsp;&nbsp;<span style=color:yellow>Yellow:</span>Complementarity determining regions (CDRs)</li>
+						<li>&nbsp;&nbsp;<span style=color:green>Green:</span>Substitutions</li>
+					</ul> 
+					<u>Note</u>: The visualization was achieved with JSmol: an open-source Java viewer for chemical structures in three dimensions.
+					</p><br>
+					
+					<p align="justify">
+					<strong>Section 2:</strong><br>
+					In this section the aggregation prone areas before and after substitutions are compared. The area is calculated with the help of the <u>DSSP</u> algorithm.<i>(Kabsch W, Sander C (1983)) Dictionary of protein secondary structure: pattern recognition of hydrogen-bonded and geometrical features. Biopolymers 22 (12)</i>
+					</p><br>
+					
+					
+					<p align="justify">
+					<strong>Section 3:</strong><br>
+					The model created can be downloaded as a pdb file and viewed using a Molecular Graphics Program (e.g. PyMol).<br>
+					<u><strong>Note:</strong></u> The model created can be improved with the use of an energy minimization program.
+					</p><br>
+					
+					<p align="justify">
+					<strong>To download an image file from JSmol:</strong><br>
+					Right Click on JSmol window and Select <em>File -> Export -> Export PNG Image</em> as shown in the image below<br>
+					<img align='middle' border="0" src="style/jsmol_download.png" class="manual_img"/><br>
+					</p><br>
+	</div>
+	<!-- END OF DESCRIPTION-->
+	<br>
+	
+	<!-- BEGGINING OF FOOTER-->
+	<<div class="Footer">
+		<img src="./style/athina.jpg" height="70" align="left">
+			<div class="Linkers">
+  				<tr>
+    				<td class="small_cell">
+    		    		<a target="_blank" class="navbar_foot" href ="http://www.uoa.gr/"><span style="color:#2F4F4F">National and Kapodistrian University of Athens</span></a>
+    				</td>
+				</tr><br> 
+				<tr>
+     				<td class="small_cell">
+     		    		<a target="_blank" class="navbar_foot" href ="http://www.biol.uoa.gr/"><span style="color:#2F4F4F">Department of Biology</span></a>
+     				</td>
+				</tr>
+					<br>
+            	<tr>
+     				<td class="small_cell"><a target="_blank" class="navbar_foot" href ="http://biophysics.biol.uoa.gr/">
+     		    		<span style="color:#008080">Back to Lab Page</span></a>
+     				</td>
+     	    	</tr>	
+		</div>
+   </div>
+   <!-- END OF FOOTER-->
+	
+	</body>
+
+</html>
